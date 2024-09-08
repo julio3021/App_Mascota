@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafc;
+            color: #6c757d;
+        }
+        h1 {
+            color: #800000;
+            font-weight: 1200;
+        }
+        h4 {
+            color: #000000;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #720900;
+            border-color: #ffffff;
+        }
+        .btn-outline-primary {
+            color: #ff6f61;
+            border-color: #ff6f61;
+        }
+        .container {
+            padding-top: 60px;
+        }
+        .img-fluid {
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+<body>
+    <div class="container text-center py-5">
+        <h1 class="display-4">Bienvenidos a PetCare</h1>
+        <p class="lead mt-3">El lugar ideal para el bienestar de tus mascotas.</p>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbC6-to2IteIcmUZLaQqp-o6ZMcPK7ZtF4Q&s" alt="Imagen de Mascotas Felices" class="img-fluid rounded mt-4 mb-5" style="max-width: 80%; height: auto;">
+        
+        <div class="row text-left mt-5">
+            <div class="col-md-4">
+                <img src="https://portal.andina.pe/EDPfotografia3/Thumbnail/2022/10/05/000903466W.jpg" alt="Servicio" class="img-fluid mb-3">
+                <h4>Servicios de Cuidado</h4>
+                <p>Desde peluquería hasta consultas veterinarias, tu mascota siempre estará en buenas manos.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_WSbdjg0pnRN0cysuYMUB6T6eLJyEW2_hQ&s" alt="Productos" class="img-fluid mb-3">
+                <h4>Productos para Mascotas</h4>
+                <p>Encuentra los mejores productos para el bienestar de tus mascotas, desde alimentos hasta juguetes.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://misanimales.com/wp-content/uploads/2019/05/relaciones-de-vecindad-entre-propietarios-de-animales.jpg" alt="Comunidad" class="img-fluid mb-3">
+                <h4>Comunidad de Mascotas</h4>
+                <p>Únete a una comunidad de amantes de mascotas donde podrás compartir experiencias y consejos.</p>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <a asp-controller="Home" asp-action="Servicios" class="btn btn-primary btn-lg">Conoce nuestros Servicios</a>
+            <a asp-controller="Home" asp-action="Productos" class="btn btn-outline-primary btn-lg ml-3">Explora Productos</a>
+        </div>
+    </div>
+</body>

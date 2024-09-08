@@ -1,0 +1,39 @@
+@model App_Mascota.ViewModel.MascotaViewModel
+
+@{
+    ViewData["Title"] = "Editar Mascota";
+}
+
+<div class="container">
+    <h1 class="text-center mb-4">Editar Mascota</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="FormMascota.Id" />
+                <div class="form-group">
+                    <label asp-for="FormMascota.Nombre" class="control-label"></label>
+                    <input asp-for="FormMascota.Nombre" class="form-control" />
+                    <span asp-validation-for="FormMascota.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FormMascota.Raza" class="control-label"></label>
+                    <input asp-for="FormMascota.Raza" class="form-control" />
+                    <span asp-validation-for="FormMascota.Raza" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FormMascota.Color" class="control-label"></label>
+                    <input asp-for="FormMascota.Color" class="form-control" />
+                    <span asp-validation-for="FormMascota.Color" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FormMascota.FechaNacimiento" class="control-label"></label>
+                    <input asp-for="FormMascota.FechaNacimiento" class="form-control" type="date" min="1900-01-01" max="2024-12-31" />
+                    <span asp-validation-for="FormMascota.FechaNacimiento" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

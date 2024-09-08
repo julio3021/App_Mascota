@@ -1,0 +1,76 @@
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff; 
+            color: #000000; 
+        }
+        .product-card {
+            background-color: #333; 
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+            color: white;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .product-title {
+            color: #ff6f61;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #ff6f61;
+            border-color: #ff6f61;
+        }
+    </style>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Nuestros Productos</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="https://oechsle.vteximg.com.br/arquivos/ids/11071908-1000-1000/imageUrl_1.jpg?v=637976043567670000" alt="Producto 1" class="card-img-top product-image">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">Dispensador para Mascotas</h5>
+                        <p class="card-text">Este dispensador es util para todo tipo de mascotas y muy recomendado.</p>
+                        <p class="card-text">Precio: S/50.00</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="https://www.superpet.pe/on/demandware.static/-/Sites-SuperPet-master-catalog/default/dwaff08f6c/images/bexter-shampoo-para-perros-piel-sensible-500ml.jpg" alt="Producto 2" class="card-img-top product-image">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">Shampoo</h5>
+                        <p class="card-text">Shampoo para perros de todas las razas muy recomendado.</p>
+                        <p class="card-text">Precio: S/25.00</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFypIAoFW3VouK8vIgOtAzdst37qa_759mw&s" alt="Producto 3" class="card-img-top product-image">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">Nutrican</h5>
+                        <p class="card-text">Croquetas para perros de 1 año super recomendado.</p>
+                        <p class="card-text">Precio: S/60.00</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>    

@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Servicios";
+}
+
+
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafc;
+            color: #6c757d;
+        }
+        h1, h2, h3, h4 {
+            color: #000000;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #ff6f61;
+            border-color: #ff6f61;
+        }
+        .btn-outline-primary {
+            color: #ff6f61;
+            border-color: #ff6f61;
+        }
+        .hero-section {
+            background-color: #e9f7fe;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .services-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        .team-section {
+            padding: 60px 0;
+            background-color: #f9fafc;
+        }
+        .contact-section {
+            padding: 60px 0;
+            background-color: #b46000;
+            color: white;
+        }
+        .img-uniform {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .img-circle {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+<body>
+    <div class="services-section text-center">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <p class="lead mt-3">Ofrecemos una amplia gama de servicios para el bienestar de tus mascotas.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <img src="https://purina.com.pe/sites/default/files/2022-10/purina-esterilizaci%C3%B3n-de-mascotas.jpg" alt="Consulta Veterinaria" class="img-fluid img-uniform mb-3">
+                    <h4>Consulta Veterinaria</h4>
+                    <p>Atención médica especializada para mantener a tu mascota sana y feliz.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.clinicaveterinariamh.com/wp-content/uploads/2023/08/45.jpg" alt="Peluquería" class="img-fluid img-uniform mb-3">
+                    <h4>Peluquería Canina y Felina</h4>
+                    <p>Servicios de peluquería y estética para que tu mascota luzca siempre impecable.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnkriKZLs5ln4OHeqDtJ_wK3USJqvBakAnQ&s" alt="Vacunación" class="img-fluid img-uniform mb-3">
+                    <h4>Vacunación</h4>
+                    <p>Protege a tu mascota de enfermedades comunes con nuestro servicio de vacunación.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Equipo -->
+    <div class="team-section text-center">
+        <div class="container">
+            <h2>Nuestro Equipo</h2>
+            <p class="lead mt-3">Conoce a los profesionales que cuidan a tus mascotas con dedicación y amor.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <img src="https://img.freepik.com/fotos-premium/joven-medico-veterinario-masculino-confiado-uniforme-sentado-lugar-trabajo_236854-46856.jpg" alt="Veterinario 1" class="img-fluid img-circle mb-3">
+                    <h4>Dr. Juan Pérez</h4>
+                    <p>Especialista en Medicina Veterinaria con 10 años de experiencia.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76FXVvelWaQlpeJIMFhGsQjaNcOkol6Kh7A&s" alt="Veterinario 2" class="img-fluid img-circle mb-3">
+                    <h4>Dra. María López</h4>
+                    <p>Experta en cirugía veterinaria y cuidado intensivo de mascotas.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://img.freepik.com/foto-gratis/guapo-medico-veterinario-sonriendo-examinando-mascota-clinica-veterinaria-comprobando-perro-pug-estetoscopio-apuntando-dedo-arriba-banner-promocional-fondo-blanco_1258-75951.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" alt="Veterinario 3" class="img-fluid img-circle mb-3">
+                    <h4>Dr. Carlos Gómez</h4>
+                    <p>Especialista en dermatología y cuidado de la piel de mascotas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="contact-section text-center">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p class="lead mt-3">Estamos aquí para ayudarte. ¡Visítanos o contáctanos por teléfono o correo electrónico!</p>
+            <p class="mt-4">📍 Dirección: Av. Mascotas Felices 123, Ciudad</p>
+            <p>📞 Teléfono: (01) 234-5678</p>
+            <p>✉️ Correo: contacto@petcare.com</p>
+            <div class="mt-4">
+                <a href="https://facebook.com" class="btn btn-outline-dark btn-lg mr-2">Facebook</a>
+                <a href="https://instagram.com" class="btn btn-outline-dark btn-lg">Instagram</a>
+            </div>
+        </div>
+    </div>        
+</body>
